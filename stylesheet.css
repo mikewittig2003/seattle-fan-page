@@ -22,6 +22,7 @@ body {
 header h1 {
     font-size: 32px;
     margin-bottom: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 header nav li {
@@ -30,8 +31,9 @@ header nav li {
 }
 
 /* Combination Selector */
-header h1, header nav a {
-    color: #336699;
+header h1,
+header nav a {
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -57,10 +59,12 @@ footer::before {
 /* Relative Units of Measurement */
 header {
     padding: 20px 10px;
+    background: linear-gradient(to right, #336699, #3fd5bc);
 }
 
 /* Specifying Colors with RGB values or Hex Codes */
-header, main, footer {
+main,
+footer {
     background-color: #FFF;
 }
 
@@ -71,7 +75,7 @@ footer {
     padding: 10px 0;
 }
 
-/* Using at least 2 properties that style fonts */
+/* Using at least 2 properties that style font */
 section h2 {
     font-size: 24px;
     font-weight: bold;
