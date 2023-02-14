@@ -9,25 +9,25 @@ body {
 
 /* ID Selector */
 #history {
-    padding: 10px;
+    padding: 1em;
 }
 
 /* Class Selector */
 .highlight {
     background-color: #E6E6E6;
-    padding: 10px;
+    padding: 1em;
 }
 
 /* Relational Selector */
 header h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 3.2em;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px #000, -1px 1px #000, 1px -1px #000, -1px -1px #000;
 }
 
 header nav li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 1em;
 }
 
 /* Combination Selector */
@@ -51,14 +51,14 @@ header nav a:hover {
 footer::before {
     content: "";
     display: block;
-    height: 1px;
+    height: 0.1em;
     background-color: #336699;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 /* Relative Units of Measurement */
 header {
-    padding: 20px 10px;
+    padding: 2em 1em;
     background: linear-gradient(to right, #336699, #3fd5bc);
 }
 
@@ -72,17 +72,17 @@ footer {
 footer {
     color: #999;
     text-align: center;
-    padding: 10px 0;
+    padding: 1em 0;
 }
 
 /* Using at least 2 properties that style font */
 section h2 {
-    font-size: 24px;
+    font-size: 2.4em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 /* Align Roster and Video Highlights */
 section {
-    padding: 10px;
+    padding: 1em;
 }
