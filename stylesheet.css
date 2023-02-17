@@ -1,53 +1,78 @@
-/* External CSS stylesheet for Seattle Mariners Fan Page */
-
-/* Type Selector */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* ID Selector */
-#history {
+section {
     padding: 1em;
+    width: 50%;
+    box-sizing: border-box;
 }
 
-/* Class Selector */
+#history {
+    width: 100%;
+}
+
 .highlight {
     background-color: #E6E6E6;
     padding: 1em;
 }
 
-/* Relational Selector */
-header h1 {
-    font-size: 3.2em;
-    margin-bottom: 1em;
-    text-shadow: 1px 1px #000, -1px 1px #000, 1px -1px #000, -1px -1px #000;
+header {
+    background: linear-gradient(to right, #336699, #3fd5bc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-header nav li {
-    display: inline-block;
-    margin-right: 1em;
-}
-
-/* Combination Selector */
-header h1,
-header nav a {
+header * {
     color: #ffffff;
     text-decoration: none;
 }
 
-/* Attribute Selector */
+header h1 {
+    font-size: 3.2em;
+    margin: 0;
+    text-shadow: 1px 1px #000, -1px 1px #000, 1px -1px #000, -1px -1px #000;
+    color: #ffffff;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #336699, #3fd5bc);
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav li {
+    margin-right: 1em;
+}
+
 a[href$=".com"] {
     color: #336699;
 }
 
-/* Pseudo-class Selector */
 header nav a:hover {
     color: #993366;
 }
 
-/* Pseudo-element Selector */
 footer::before {
     content: "";
     display: block;
@@ -56,33 +81,41 @@ footer::before {
     margin-bottom: 1em;
 }
 
-/* Relative Units of Measurement */
-header {
-    padding: 2em 1em;
-    background: linear-gradient(to right, #336699, #3fd5bc);
-}
-
-/* Specifying Colors with RGB values or Hex Codes */
 main,
 footer {
     background-color: #FFF;
+    width: 100%;
 }
 
-/* Setting the Color of at least one element */
 footer {
     color: #999;
     text-align: center;
     padding: 1em 0;
 }
 
-/* Using at least 2 properties that style font */
+footer a:hover {
+    color: #993366;
+}
+
 section h2 {
     font-size: 2.4em;
     font-weight: bold;
     margin-bottom: 1em;
 }
 
-/* Align Roster and Video Highlights */
-section {
-    padding: 1em;
+#roster {
+    float: left;
+}
+
+#video {
+    float: right;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #roster,
+    #video {
+        float: none;
+        width: 100%;
+    }
 }
