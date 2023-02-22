@@ -1,26 +1,39 @@
 <!DOCTYPE html>
+<!-- The doctype declaration defines the version of HTML that is used on the page -->
 <html>
+<!-- The html element is the root element of an HTML document -->
 
 <head>
     <title>Seattle Mariners Fan Page</title>
+    <!-- The title element specifies the title of the page that is displayed in the browser's title bar -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- The link element is used to link to an external style sheet file -->
 </head>
 
 <body>
     <header>
+        <!-- The header element represents a container for introductory content or a set of navigational links -->
         <h1>Seattle Mariners Fan Page</h1>
+        <!-- The h1 element defines a heading -->
         <nav>
+            <!-- The nav element represents a section of a page that links to other pages or to parts within the page -->
             <ul>
+                <!-- The ul element defines an unordered list -->
                 <li><a href="history.html">History</a></li>
+                <!-- The li element defines a list item -->
                 <li><a href="roster.html">Roster</a></li>
                 <li><a href="video.html">Video Highlights</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- The main element represents the main content of the page -->
         <div class="grid-container">
+            <!-- The div element is a generic container element that is used to group elements -->
             <section id="history">
+                <!-- The section element defines a section of a document -->
                 <h2>History</h2>
+                <!-- The h2 element defines a heading -->
                 <p>The Seattle Mariners were established in 1977 as an expansion team in Major League Baseball. They
                     play
                     their home games at T-Mobile Park in Seattle, Washington. The Mariners struggled for many years, but
@@ -30,6 +43,8 @@
                     The Mariners have had many great players throughout their history, including Hall of Famers Ken
                     Griffey
                     Jr. and Edgar Martinez.</p>
+                <img src="cal.jpg" alt="Seattle Mariners logo" class="scalable">
+                <!-- The img element is used to embed an image in an HTML page -->
             </section>
             <section id="roster">
                 <h2>Roster</h2>
@@ -38,15 +53,24 @@
             </section>
             <section id="video">
                 <h2>Video Highlights</h2>
+                <iframe
+                    src="https://streamable.com/m/cal-raleigh-clinches-for-mariners?partnerId=web_video-playback-page_video-share"
+                    width="560" height="315"></iframe>
                 <p>Check out the latest highlights from the Seattle Mariners <a
                         href="https://www.mlb.com/mariners/video" target="_blank">Here</a>!</p>
+                <!-- The a element defines a hyperlink -->
             </section>
         </div>
     </main>
     <footer>
+        <!-- The footer element represents a footer for its nearest sectioning content or sectioning root element -->
         <p>&copy; 2023 Seattle Mariners Fan Page</p>
+        <!-- The p element defines a paragraph -->
         <a href="#">Return to top</a>
+        <!-- The # symbol indicates that the link should return to the top of the page -->
     </footer>
 </body>
+<!-- The body element defines the body of the HTML document -->
 
 </html>
+<!-- The closing html tag

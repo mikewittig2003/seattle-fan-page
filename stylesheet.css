@@ -1,26 +1,30 @@
+/* Set default styles for the body element */
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
 }
 
+/* Style for each section element */
 section {
     padding: 1em;
     width: 50%;
     box-sizing: border-box;
+    float: left;
 }
 
+/* Style for the history section element */
 #history {
     width: 100%;
 }
 
+/* Style for highlighted sections */
 .highlight {
     background-color: #E6E6E6;
     padding: 1em;
 }
 
+/* Style for the header element */
 header {
     background: linear-gradient(to right, #336699, #3fd5bc);
     display: flex;
@@ -30,11 +34,13 @@ header {
     width: 100%;
 }
 
+/* Style for all elements within the header element */
 header * {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Style for the h1 element within the header element */
 header h1 {
     font-size: 3.2em;
     margin: 0;
@@ -42,6 +48,7 @@ header h1 {
     color: #ffffff;
 }
 
+/* Style for the nav element within the header element */
 header nav {
     display: flex;
     justify-content: center;
@@ -52,6 +59,7 @@ header nav {
     margin-bottom: 1em;
 }
 
+/* Style for the ul element within the nav element */
 header nav ul {
     list-style: none;
     margin: 0;
@@ -61,18 +69,22 @@ header nav ul {
     align-items: center;
 }
 
+/* Style for the li elements within the ul element in the nav element */
 header nav li {
     margin-right: 1em;
 }
 
+/* Style for anchor elements with URLs ending in .com */
 a[href$=".com"] {
     color: #336699;
 }
 
+/* Style for anchor elements within the nav element on hover */
 header nav a:hover {
     color: #993366;
 }
 
+/* Style for the footer element */
 footer::before {
     content: "";
     display: block;
@@ -81,41 +93,45 @@ footer::before {
     margin-bottom: 1em;
 }
 
+/* Style for the main and footer elements */
 main,
 footer {
     background-color: #FFF;
     width: 100%;
+    overflow: hidden;
 }
 
+/* Style for the footer element */
 footer {
     color: #999;
     text-align: center;
     padding: 1em 0;
 }
 
+/* Style for anchor elements within the footer element on hover */
 footer a:hover {
     color: #993366;
 }
 
+/* Style for the h2 elements within the section elements */
 section h2 {
     font-size: 2.4em;
     font-weight: bold;
     margin-bottom: 1em;
 }
 
-#roster {
-    float: left;
+/* Style for scalable images within the section elements */
+.scalable {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
 }
 
-#video {
-    float: right;
-}
-
+/* Media query for screens with a maximum width of 768px */
 @media only screen and (max-width: 768px) {
-
-    #roster,
-    #video {
-        float: none;
+    section {
         width: 100%;
+        float: none;
     }
 }
