@@ -128,10 +128,107 @@ section h2 {
     margin: auto;
 }
 
+/* Style for the history-content class */
+.history-content {
+    padding-left: 2em;
+    padding-right: 2em;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+/* Style for the h3 elements within the history-content class */
+.history-content h3 {
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Style for the video-wrapper class */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Roster Page */
+.roster h2 {
+    padding-left: 1em;
+    max-width: 100%;
+}
+
+/* Style for the roster table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Video Highlights Page */
+.video h2 {
+    padding-left: 1em;
+    max-width: 100%;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Media query for screens with a maximum width of 768px */
 @media only screen and (max-width: 768px) {
     section {
         width: 100%;
         float: none;
+    }
+
+    .history-content {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .video-wrapper {
+        padding-bottom: 75%;
     }
 }

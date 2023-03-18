@@ -4,10 +4,12 @@
 <!-- The html element is the root element of an HTML document -->
 
 <head>
+    <meta charset="UTF-8">
     <title>Seattle Mariners Fan Page</title>
     <!-- The title element specifies the title of the page that is displayed in the browser's title bar -->
-    <link rel="stylesheet" type="text/css" href="styles\stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <!-- The link element is used to link to an external style sheet file -->
+    <link rel="icon" type="image/png" href="media/Baseball.png">
 </head>
 
 <body>
@@ -19,11 +21,10 @@
             <!-- The nav element represents a section of a page that links to other pages or to parts within the page -->
             <ul>
                 <!-- The ul element defines an unordered list -->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages\history.html">History</a></li>
+                <li><a href="pages/history.html">History</a></li>
                 <!-- The li element defines a list item -->
-                <li><a href="pages\roster.html">Roster</a></li>
-                <li><a href="pages\video.html">Video Highlights</a></li>
+                <li><a href="pages/roster.html">Roster</a></li>
+                <li><a href="pages/video.html">Video Highlights</a></li>
             </ul>
         </nav>
     </header>
@@ -44,19 +45,22 @@
                     The Mariners have had many great players throughout their history, including Hall of Famers Ken
                     Griffey
                     Jr. and Edgar Martinez.</p>
-                <img src="media\cal.jpg" alt="Seattle Mariners logo" class="scalable">
+                <img src="media/cal.jpg" alt="Cal Raleigh" class="scalable">
                 <!-- The img element is used to embed an image in an HTML page -->
             </section>
             <section id="roster">
                 <h2>Roster</h2>
+                <img src="media/julio.jpg" alt="Julio Rodriguez" class="scalable">
                 <p>The current roster of the Seattle Mariners includes players such as Julio Rodríguez, Ty France, Luis
                     Castillo, Teoscar Hernández, and Eugenio Suárez.</p>
             </section>
             <section id="video">
                 <h2>Video Highlights</h2>
-                <iframe
-                    src="https://streamable.com/m/cal-raleigh-clinches-for-mariners?partnerId=web_video-playback-page_video-share"
-                    width="560" height="315"></iframe>
+                <div class="video-wrapper">
+                    <iframe
+                        src="https://streamable.com/m/cal-raleigh-clinches-for-mariners?partnerId=web_video-playback-page_video-share"
+                        width="560" height="315"></iframe>
+                </div>
                 <p>Check out the latest highlights from the Seattle Mariners <a
                         href="https://www.mlb.com/mariners/video" target="_blank">Here</a>!</p>
                 <!-- The a element defines a hyperlink -->
@@ -70,6 +74,7 @@
         <a href="#">Return to top</a>
         <!-- The # symbol indicates that the link should return to the top of the page -->
     </footer>
+
 </body>
 <!-- The body element defines the body of the HTML document -->
 
